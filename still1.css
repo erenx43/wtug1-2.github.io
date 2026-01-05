@@ -1,0 +1,82 @@
+body {
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    width: 600px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+h1 { text-align: center; margin-bottom: 20px; }
+
+input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    padding: 12px;
+    background-color: #eee;
+    text-align: left;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Sabit 50px Görsel Boyutu */
+.urun-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+/* --- Akıllı Satır Renkleri --- */
+.satir-yeterli {
+    background-color: #d4edda; /* Yeşil arka plan */
+    color: #155724;
+}
+
+.satir-yetersiz {
+    background-color: #f8d7da; /* Kırmızı arka plan */
+    color: #721c24;
+}
+
+.stok-text {
+    font-weight: bold;
+}
+
+.ekle-form {
+    margin-top: 25px;
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+button:hover { background: #000; }

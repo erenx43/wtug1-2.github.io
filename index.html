@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Akıllı Kafe Stok Paneli</title>
+    <link rel="stylesheet" href="still1.css">
+</head>
+<body>
+
+<div class="container">
+    <h1> Kafe Stok Durum Paneli</h1>
+
+    <input type="text" id="aramaInput" onkeyup="listele()" placeholder="Ürün ara...">
+
+    <table>
+        <thead>
+            <tr>
+                <th>Görsel</th>
+                <th>Ürün Adı</th>
+                <th>Kalan Miktar</th>
+            </tr>
+        </thead>
+        <tbody id="tabloGövdesi">
+            </tbody>
+    </table>
+
+    <div class="ekle-form">
+        <h3>Yeni Ürün Ekle</h3>
+        <input type="text" id="yeniAd" placeholder="Ürün Adı">
+        <input type="number" id="yeniMiktar" placeholder="Stok Miktarı">
+        <button onclick="ekle()">Listeye Ekle</button>
+    </div>
+</div>
+
+<script src="sınav.js"></script>
+</body>
+</html>

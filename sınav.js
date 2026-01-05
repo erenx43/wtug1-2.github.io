@@ -12,7 +12,7 @@ function listele() {
     urunler.forEach(urun => {
         if (urun.ad.toLowerCase().includes(arama)) {
             
-            // Satır rengini belirle (Stok 5 altındaysa yetersiz/kırmızı)
+            // Satır rengini belirler
             const satirSinifi = urun.miktar <= 5 ? "satir-yetersiz" : "satir-yeterli";
 
             const satir = `
@@ -33,8 +33,7 @@ function ekle() {
     if (adInput.value && miktarInput.value) {
         urunler.push({
             ad: adInput.value,
-            miktar: parseInt(miktarInput.value),
-            resim: "https://via.placeholder.com/50?text=Yeni"
+            miktar: parseInt(miktarInput.value)
         });
         
         adInput.value = "";
@@ -44,5 +43,6 @@ function ekle() {
         alert("Lütfen alanları doldurun!");
     }
 }
-// Başlangıçta listeyi getir
+// Başlangıçta listeyi getirir
+
 listele();
